@@ -1,0 +1,10 @@
+Dim i As Integer
+
+For i = 2 To 281
+    Range("I" & i).Select
+    ActiveCell.FormulaR1C1 = _
+        "=CONCAT(""[""""""&RC[-4]&"""""", """"""&RC[-3]&"""""", """"""&RC[-2]&"""""", """"""&RC[-1]&""""""]"")"
+
+Next i
+
+End Sub

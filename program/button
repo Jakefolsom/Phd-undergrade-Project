@@ -1,0 +1,9 @@
+ <!-- REMOVE THIS WHEN DONE TESTING -->
+    <button onclick="clickAll()">Check All</button>
+        <script>
+            function clickAll() {
+                var btns = document.querySelectorAll('input[type="radio"]')
+                for(var i=0;i<btns.length;i++) { btns[i].checked=true; }
+            }
+    </script>
+        <!-- REMOVE THIS WHEN DONE TESTING -->
